@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecommerce-analytics-pipeline"
+version = "1.0.0"
+description = "ELT pipeline + SQL modeling (DuckDB) + Streamlit dashboard on synthetic e-commerce data"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Aleksa Djorovic" }]
+dependencies = [
+    "duckdb>=1.1",
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "numpy>=1.26",
+    "plotly>=5.22",
+    "streamlit>=1.51",  # width="stretch" on st.plotly_chart
+    "pydantic>=2.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff==0.17.0"]  # pinned: CI runs `ruff format --check`
+
+[tool.setuptools]
+packages = ["pipeline"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]  # long SQL / CSS strings; the formatter handles code
