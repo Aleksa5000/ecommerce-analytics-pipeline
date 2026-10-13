@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "ELT pipeline + SQL modeling (DuckDB) + Streamlit dashboard on synthetic e-commerce data"
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = { text = "All rights reserved" }
 authors = [{ name = "Aleksa Djorovic" }]
 dependencies = [
     "duckdb>=1.1",

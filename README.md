@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/Aleksa5000/ecommerce-analytics-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/Aleksa5000/ecommerce-analytics-pipeline/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+![License: All rights reserved](https://img.shields.io/badge/license-all%20rights%20reserved-lightgrey)
 
 An end-to-end analytics project: a **config-driven ELT pipeline** (Python + DuckDB), a **layered SQL model**
 (staging, intermediate, marts), a **data quality gate** that fails loudly, and an **interactive dashboard**
@@ -191,4 +191,4 @@ I build data pipelines, warehouse models and dashboards for e-commerce and SaaS 
 
 ## License
 
-MIT, see [LICENSE](LICENSE).
+All rights reserved. This is a portfolio sample: you can read and run the code to evaluate my work, but you may not use it commercially, redistribute it or build on it without my written permission. See [LICENSE](LICENSE).
